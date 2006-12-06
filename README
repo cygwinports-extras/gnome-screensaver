@@ -3,39 +3,39 @@ gnome-screensaver
 GNOME Desktop screensaver.
 
 Runtime requirements:
-  cygwin-1.5.21-1
-  GConf2-2.14.0-2
+  cygwin-1.5.22-1
+  GConf2-2.16.0-1
   crypt-1.1-1
-  glib2-2.10.3-1
-  gnome-vfs2-2.14.2-1
-  gtk2-x11-2.8.20-1
-  libX11_6-1.0.2-1
-  libXext6-1.0.1-1
-  libXss1-1.1.0-1
-  libcairo2-1.0.4-1
-  libdbus-glib_1_2-0.71-1
-  libdbus1_3-0.91-1
+  glib2-2.12.4-1
+  gnome-menus-2.16.1-1
+  gnome-vfs2-2.16.2-1
+  gtk2-x11-2.10.6-1
+  libGL1-6.5.1-1
+  libX11_6-1.1.1-1
+  libXss1-1.1.1-1
+  libcairo2-1.2.6-1
+  libdbus-glib_1_2-0.72-1
+  libdbus1_3-0.94-1
   libexif-0.6.12-1
   libglade2-2.6.0-1
-  libgnome-menu2-2.14.0-1
-  libgnome2-2.14.1-1
-  libgnomeui2-2.14.1-1
-  xscreensaver-4.24-1
+  libgnome2-2.16.0-1
+  libgnomeui2-2.16.1-1
+  xscreensaver-5.01-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.21-1
-  autoconf2.5-2.59-2
+  cygwin-1.5.22-1
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20060709-1
-  cygport-0.2.5-1
+  binutils-20060817-1
+  cygport-0.2.7-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   intltool-0.35.0-1
-  libtool1.5-1.5.22-1
+  libtool1.5-1.5.23a-1
   make-3.81-1
-  pkg-config-0.20-1
-  sed-4.1.5-1
+  pkg-config-0.21-1
+  sed-4.1.5-2
 
 Canonical website:
   http://www.gnome.org/
@@ -46,15 +46,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-screensaver-2.14.3-X-src.tar.bz2
+  unpack gnome-screensaver-2.16.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-screensaver-2.14.3-X.cygport all
+  cygport ./gnome-screensaver-2.16.2-X.cygport all
 
 This will create:
-  /usr/src/gnome-screensaver-2.14.3-X-src.tar.bz2
-  /usr/src/gnome-screensaver-2.14.3-X.tar.bz2
+  /usr/src/gnome-screensaver-2.16.2-X-src.tar.bz2
+  /usr/src/gnome-screensaver-2.16.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -68,27 +68,31 @@ Files included in the binary package:
   /usr/bin/gnome-screensaver-preferences.exe
   /usr/bin/gnome-screensaver.exe
   /usr/lib/gnome-screensaver-dialog.exe
+  /usr/lib/gnome-screensaver-gl-helper.exe
   /usr/lib/gnome-screensaver/floaters.exe
   /usr/lib/gnome-screensaver/popsquares.exe
   /usr/lib/gnome-screensaver/slideshow.exe
   /usr/lib/pkgconfig/gnome-screensaver.pc
   /usr/share/applications/gnome-screensaver-preferences.desktop
+  /usr/share/applications/screensavers/cosmos-slideshow.desktop
+  /usr/share/applications/screensavers/footlogo-floaters.desktop
+  /usr/share/applications/screensavers/personal-slideshow.desktop
+  /usr/share/applications/screensavers/popsquares.desktop
   /usr/share/desktop-directories/gnome-screensaver.directory
-  /usr/share/doc/Cygwin/gnome-screensaver-2.14.3.README
-  /usr/share/doc/gnome-screensaver-2.14.3/AUTHORS
-  /usr/share/doc/gnome-screensaver-2.14.3/COPYING
-  /usr/share/doc/gnome-screensaver-2.14.3/ChangeLog
-  /usr/share/doc/gnome-screensaver-2.14.3/INSTALL
-  /usr/share/doc/gnome-screensaver-2.14.3/NEWS
-  /usr/share/doc/gnome-screensaver-2.14.3/README
-  /usr/share/doc/gnome-screensaver-2.14.3/TODO
+  /usr/share/doc/Cygwin/gnome-screensaver-2.16.2.README
+  /usr/share/doc/gnome-screensaver-2.16.2/AUTHORS
+  /usr/share/doc/gnome-screensaver-2.16.2/COPYING
+  /usr/share/doc/gnome-screensaver-2.16.2/ChangeLog
+  /usr/share/doc/gnome-screensaver-2.16.2/INSTALL
+  /usr/share/doc/gnome-screensaver-2.16.2/NEWS
+  /usr/share/doc/gnome-screensaver-2.16.2/README
+  /usr/share/doc/gnome-screensaver-2.16.2/TODO
   /usr/share/gnome-screensaver/gnome-screensaver-preferences.glade
-  /usr/share/gnome-screensaver/themes/cosmos-slideshow.desktop
-  /usr/share/gnome-screensaver/themes/footlogo-floaters.desktop
-  /usr/share/gnome-screensaver/themes/personal-slideshow.desktop
-  /usr/share/gnome-screensaver/themes/popsquares.desktop
+  /usr/share/gnome-screensaver/lock-dialog-default.glade
+  /usr/share/locale/ar/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/bg/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/bn/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/ca/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/cs/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/cy/LC_MESSAGES/gnome-screensaver.mo
@@ -100,32 +104,45 @@ Files included in the binary package:
   /usr/share/locale/en_GB/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/es/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/et/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/eu/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/fa/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/fi/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/fr/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/gl/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/gu/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/he/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/hi/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/hu/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/id/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/it/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/ja/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/ka/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/ko/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/ku/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/lt/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/lv/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/mg/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/mk/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/ml/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/mn/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/nb/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/ne/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/nl/LC_MESSAGES/gnome-screensaver.mo
-  /usr/share/locale/no/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/or/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/pa/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/pl/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/pt/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/pt_BR/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/ru/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/sk/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/sl/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/sq/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/sr/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/sr@Latn/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/sv/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/ta/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/th/LC_MESSAGES/gnome-screensaver.mo
+  /usr/share/locale/tr/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/uk/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/vi/LC_MESSAGES/gnome-screensaver.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/gnome-screensaver.mo
@@ -145,6 +162,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 2.16.2-1 -----
+Version bump for GNOME 2.16.
 
 ----- version 2.14.3-1 -----
 Version bump.
