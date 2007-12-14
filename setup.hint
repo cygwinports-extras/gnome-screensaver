@@ -1,4 +1,4 @@
 category: Gnome
-requires: cygwin GConf2 crypt glib2 gnome-menus gnome-vfs2 gtk2-x11 libGL1 libX11_6 libXss1 libcairo2 libdbus-glib_1_2 libdbus1_3 libexif12 libglade2 libgnome2 libgnomekbd libgnomeui2 libintl8 libxklavier11 pango xscreensaver
+requires: cygwin GConf2 crypt glib2 gdk-pixbuf2 gnome-menus gnome-vfs2 gtk2-x11 libGL1 libX11_6 libXext6 libXss1 libcairo2 libdbus-glib_1_2 libdbus1_3 libglade2 libgnomekbd libintl8 libnotify libxklavier11 pango xscreensaver
 sdesc: "GNOME Desktop screensaver"
 ldesc: "GNOME Desktop screensaver"
