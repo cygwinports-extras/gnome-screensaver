@@ -2,4 +2,4 @@ inherit gnome2
 
 DESCRIPTION="GNOME screensaver"
 
-CYGCONF_ARGS="--libexecdir=/usr/lib --disable-xinerama"
+CYGCONF_ARGS="--libexecdir=/usr/lib"
